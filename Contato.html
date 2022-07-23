@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contatos-Livraria Lanna</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+       <body>
+           <header>
+               <div class="caixa">
+                    <h1> <img id="Logotipo" alt="Crianca sentada lendo" src="leia.jpg"></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="meu primeiro site.html">Home</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="Contatos.html">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </div>      
+            </header>
+            <main>
+                <form>
+                    <ul>
+                        <li><label for="nomesobrenome">Nome e Sobrenome</label></li>
+                        <input type="text" id="nomesobrenome" required>
+
+                        <li><label for="email">Email</label></li>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                        <li><label for="telefone">Telefone</label></li>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="Mensagem">Mensagem</label>
+                        <textarea cols="60" rows="10" id= "mensagem" class="input-padrao"required></textarea>
+                    <fieldset>
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email">Email</label>
+                        <input type="radio" name="contato"value="email" id="radio-email">
+
+                        <label for="radio-telefone">Telefone</label>
+                        <input type="radio" name="contato" value="Telefone" id="radio-Telefone">
+
+                        <label for="radio-whatsapp">Whatsapp</label>
+                        <input type="radio" name="contato" value="Whatsapp" id="radio-Whatsapp"checked>
+                    </fieldset>
+                    <fieldset>
+                            <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                        <label class="checkbox">
+                        <input type="checkbox"checked>
+                        Gostaria de receber nossas novidades por email?
+                        </label>
+                <li><input type="submit" value="Enviar Formulario" class="enviar" ></li>
+                </ul> 
+                </form> 
+                    <table>
+                        <thead> 
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                            <tr>
+                                <td colspan="5">Rio de Janeiro</td> 
+                            </tr>
+
+                        </tr>
+                    </tbody>
+                    </table>
+            </main>
+            <footer>
+                <img id = "logotipo" alt="Estante de livros" src="logotipo.png">
+                <p class="Copyright">&copy; Copyright Livraria Lanna - 2022</p>
+            </footer>
+       </body>
+    </html>
